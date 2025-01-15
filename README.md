@@ -38,6 +38,7 @@ FILE STRUCTURE
 
 
 /models
+
     ├── base_model.py         # Base class for all models
     ├── user.py              # User class inherits from BaseModel
     └── storage.py           # Handles JSON file for data persistence
