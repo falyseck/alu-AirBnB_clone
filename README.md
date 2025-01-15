@@ -2,12 +2,15 @@
 
 AIRBNB CLONE-THE CONSOLE
 
-Overview
+
+OVERVIEW
 
 
 This project is a command-line interface (CLI) for managing a simplified version of an AirBnB web app. It enables the creation, manipulation, and storage of AirBnB objects, utilizing object-oriented programming in Python. The main goal is to create a working console with commands to handle BaseModel and User objects, along with basic operations like create, show, update, destroy, and list.
 
-Features
+
+
+FEATURES
 
 Create: Add new instances to storage and print their unique ID.
 
@@ -21,7 +24,7 @@ All: List all instances of a class or all stored objects.
 
 
 
-Technologies Used
+TECHNOLOGIES USED
 
 
 Python 3.x: Object-Oriented Programming
@@ -31,7 +34,9 @@ File Storage: JSON-based serialization for persistent data
 Datetime: For tracking object creation and update times
 
 
-File Structure
+FILE STRUCTURE
+
+
 /models
     ├── base_model.py         # Base class for all models
     ├── user.py              # User class inherits from BaseModel
@@ -41,7 +46,10 @@ File Structure
 README.md                   # Project documentation
 
 
-Setup and Usage
+
+SETUP AND USAGE
+
+
 
 
 1.Clone this repository:
@@ -80,7 +88,9 @@ Setup and Usage
 
       
 
-Example Interaction
+EXAMPLE Interaction
+
+
 
 (hbnb) create BaseModel
 
