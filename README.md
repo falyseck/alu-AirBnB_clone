@@ -10,10 +10,15 @@ This project is a command-line interface (CLI) for managing a simplified version
 Features
 
 Create: Add new instances to storage and print their unique ID.
+
 Show: Retrieve an instance by class name and ID, displaying its string representation.
+
 Update: Modify attributes of an existing instance.
+
 Destroy: Delete an instance from storage.
+
 All: List all instances of a class or all stored objects.
+
 
 
 Technologies Used
