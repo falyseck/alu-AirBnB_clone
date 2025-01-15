@@ -24,15 +24,13 @@ class FileStorage:
 
 
     def reload(self):
-        """Deserialize objects: JSON TO FILE"""
-        try:
-            with open(self.__file_path, 'r') as f:
-                data = json.load(f)
-                from models.base_model import BaseModel
-                for key, value in data.items():
-                    class_name = value["__class__"]
-                    if class_name in ["BaseModel", "User", "State", "City", "Amenity", "Place", "Review"]:
-                        cls = eval(class_name)
-                        self.__objects[key] = cls(**value)
-        except FileNotFoundError:
-            pass
+      try:
+        with open(self.__file_path, 'r') as f:
+            data = json.load(f)
+            for key, value in data.items():
+                # Dynamically reconstruct the object using the correct class
+                class_name = value['__class__']
+                cls = eval(class_name)
+                self.__objects[key] = cls(**value)
+      except FileNotFoundError:
+        pass
