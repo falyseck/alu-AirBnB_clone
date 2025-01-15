@@ -90,21 +90,13 @@ SETUP AND USAGE
       
 
 EXAMPLE Interaction
-
-
-
+python
 (hbnb) create BaseModel
-
 <generated-id>
-  
 (hbnb) show BaseModel <generated-id>
-
 [BaseModel] (<generated-id>) {...}
-
 (hbnb) update BaseModel <generated-id> name "AirBnB"
-
 (hbnb) show BaseModel <generated-id>
-
 [BaseModel] (<generated-id>) {'name': 'AirBnB', ...}
 
 
